@@ -4,7 +4,7 @@
   "description": "A bot for Discord that offers Escape From Tarkov Maps at command.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node Server.js"
   },
   "repository": {
     "type": "git",
