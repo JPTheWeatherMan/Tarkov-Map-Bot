@@ -25,6 +25,24 @@ client.on("message", (message) => {
   let args = messageArray.slice(1);
 
   if (!command.startsWith(prefix)) return;
+
+  console.log(args)
+
+  if(args[0] === 'map'){
+    switch(args[1]){
+      case 'customs':
+        message.channel.send("Customs Map", { files: ["./static/Customs.jpg"] })
+        break;
+      
+        case 'factory':
+          message.channel.send("Factory Map", { files: ["./static/Factory.png"] })
+          break;
+        
+        case 'interchange':
+          message.channel.send("Interchange Map", { files: ["./static/Interchange.jpg"] })
+          break;
+      }
+  }
 });
 
 client.login(process.env.TOKEN);
