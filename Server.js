@@ -19,14 +19,12 @@ client.on("message", (message) => {
 	if (message.author.bot) return;
   if (message.channel.type === "dm") return;
 
-  let prefix = "-tarkov"
+  let prefix = "-tarkov";
   let messageArray = message.content.split(" ");
   let command = messageArray[0];
   let args = messageArray.slice(1);
 
   if (!command.startsWith(prefix)) return;
-
-  console.log(args)
 
   if(args[0] === 'map'){
     switch(args[1]){
@@ -57,7 +55,15 @@ client.on("message", (message) => {
       case 'woods':
         message.channel.send("Woods Map", { files: ["./static/Woods.jpg"] })
         break;
+
+      default:
+        message.channel.send("Sorry, map not found. Try -tarkov help")
+        break;
       }
+  }
+
+  if(args[0] === 'hideoutreqs'){
+    message.channel.send("Hideout Requirements", { files: ["./static/Hideout-reqs.jpg"] })
   }
 });
 
