@@ -34,13 +34,29 @@ client.on("message", (message) => {
         message.channel.send("Customs Map", { files: ["./static/Customs.jpg"] })
         break;
       
-        case 'factory':
-          message.channel.send("Factory Map", { files: ["./static/Factory.png"] })
-          break;
+      case 'factory':
+        message.channel.send("Factory Map", { files: ["./static/Factory.png"] })
+        break;
         
-        case 'interchange':
-          message.channel.send("Interchange Map", { files: ["./static/Interchange.jpg"] })
-          break;
+      case 'interchange':
+        message.channel.send("Interchange Map", { files: ["./static/Interchange.jpg"] })
+        break;
+      
+      case 'labs':
+        message.channel.send("Labs Map", { files: ["./static/Labs.jpeg"] })
+        break;
+      
+      case 'reserve':
+        message.channel.send("Reserve Map", { files: ["./static/Reserve.jpg"] })
+        break;
+      
+      case 'shoreline':
+        message.channel.send("Shoreline Map", { files: ["./static/Shoreline.jpg"] })
+        break;
+      
+      case 'woods':
+        message.channel.send("Woods Map", { files: ["./static/Woods.jpg"] })
+        break;
       }
   }
 });
