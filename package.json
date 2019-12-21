@@ -4,7 +4,8 @@
   "description": "A bot for Discord that offers Escape From Tarkov Maps at command.",
   "main": "index.js",
   "scripts": {
-    "start": "node Server.js"
+    "start": "node Server.js",
+    "dev": "nodemon Server.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,8 @@
   "dependencies": {
     "discord.js": "^11.5.1",
     "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
