@@ -79,8 +79,9 @@ client.on("message", (message) => {
 	}
 
 	if (args[0] === "hideoutreqs") {
-		message.channel.send("Hideout Requirements", {
-			files: ["./static/Hideout-reqs.jpg"]
+		message.channel
+			.send("Hideout Requirements", {
+				files: ["./static/Hideout-reqs.jpg"]
 		});
 	}
 
