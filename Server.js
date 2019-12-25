@@ -82,11 +82,8 @@ client.on("message", (message) => {
 		message.channel
 			.send("Hideout Requirements", {
 				files: ["./static/Hideout-reqs.jpg"]
-		});
-	}
-
-	if(args[0] === 'gavinisgay'){
-		message.channel.send("/tts gavin is a gay stupid retarded dyslexic polio ridden sexually aggressive indie go go funded niggerman")
+			})
+			.catch((error) => console.log(error));
 	}
 });
 
